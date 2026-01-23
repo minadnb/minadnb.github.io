@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Góc nhìn của Như</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap&subset=vietnamese" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #1e3a40, #0f1f23);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid rgba(255,255,255,0.2);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .menu {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .menu a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+
+      transition: all 0.2s ease;
+    }
+
+    .menu a:hover {
+      background: rgba(255,255,255,0.18);
+      transform: translateY(-2px);
+    }
+
+    .icon {
+      width: 24px;
+      text-align: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    footer {
+      margin-top: 26px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    @media (max-width: 420px) {
+      .card {
+        border-radius: 0;
+        min-height: 100vh;
+        justify-content: center;
+      }
+    }
+	
+	.donate {
+	  margin-top: 26px;
+	  padding: 18px 14px;
+	  border-radius: 16px;
+	  background: rgba(255,255,255,0.06);
+	  text-align: center;
+	}
+
+	.qr {
+	  width: 140px;
+	  height: 140px;
+	  object-fit: contain;
+	  border-radius: 12px;
+	  background: #fff;
+	  padding: 8px;
+	  margin-bottom: 12px;
+	}
+
+	.donate p {
+	  margin: 0;
+	  font-size: 13px;
+	  line-height: 1.6;
+	  color: rgba(255,255,255,0.85);
+	}
+
+	.title {
+	  margin: 12px 0 6px;
+	  font-size: 22px;
+	  font-weight: 500;
+	  letter-spacing: 0.3px;
+	}
+
+	.tagline {
+	  font-size: 13px;
+	  color: rgba(255,255,255,0.7);
+	  font-style: italic;
+	}
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="assets/index/avatar.png" alt="Góc nhìn của Như" class="avatar">
+
+    <h1 class="title">Observations by Mina</h1>
+	<div class="tagline">
+	  Không anh hùng, không phản diện
+	</div>
+
+    <div class="menu">
+		<a href="chuong-01.html">
+			<span class="icon">📖</span>
+			<span>Series: Nhật ký của kẻ không chạy</span>
+		</a>
+
+		<a href="https://www.youtube.com/@TEN_KENH_CUA_ANH" target="_blank">
+			<span class="icon">▶️</span>
+			<span>YouTube</span>
+		</a>
+
+		<a href="https://www.tiktok.com/@TEN_KENH_CUA_ANH" target="_blank">
+			<span class="icon">🎵</span>
+			<span>TikTok</span>
+		</a>
+
+		<a href="contact.html">
+			<span class="icon">📬</span>
+			<span>Liên hệ</span>
+		</a>
+    </div>
+	<div class="donate">
+	  <img src="assets/index/qr-donate.png" alt="QR Donate" class="qr">
+	  <p>
+		Nếu những dòng này khiến bạn dừng lại vài giây, <br/>
+		bạn có thể mời tôi một ly cà phê để tôi viết tiếp.
+	  </p>
+	</div>
+
+
+    <footer>
+      © 2026 · Observations by Mina
+    </footer>
+  </div>
+
+</body>
+</html>
