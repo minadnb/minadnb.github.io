@@ -85,4 +85,69 @@ p {
   text-align: center;
 }
 
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: #e5e5e5;
+  line-height: 1.9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 48px 20px;
+}
+
+.series {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #888;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 8px 0 4px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #aaa;
+  margin-bottom: 40px;
+  font-style: italic;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  margin: 0 0 22px;
+}
+
+.break {
+  margin: 36px 0;
+  border: none;
+  border-top: 1px solid #222;
+}
+
+.highlight {
+  color: #fff;
+  font-weight: 600;
+}
+
+.quote {
+  margin: 28px 0;
+  padding-left: 18px;
+  border-left: 3px solid #444;
+  color: #ccc;
+  font-style: italic;
+}
+
+.ending {
+  margin-top: 48px;
+  font-weight: 600;
+  color: #fff;
+}
 
