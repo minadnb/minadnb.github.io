@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f5f2;
+  color: #222;
+  font-family: 'Merriweather', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.reader {
+  max-width: 720px;
+  margin: auto;
+  padding: 48px 22px;
+  line-height: 1.9;
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 44px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 1.6em;
+  text-align: justify;
+}
+
+.nav {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #555;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  max-width: 720px;
+  margin: 24px auto 0;
+  padding: 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .brand {
+  font-size: 14px;
+  text-decoration: none;
+  color: #777;
+  letter-spacing: 0.5px;
+}
+
+.menu select {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.navsign {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.signature {
+  font-size: 14px;
+  color: #777;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
