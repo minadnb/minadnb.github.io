@@ -9,9 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap&subset=vietnamese" rel="stylesheet">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -44,32 +42,45 @@
       margin-bottom: 16px;
     }
 
-    h1 {
-      margin: 0;
+    .title {
+      margin: 12px 0 6px;
       font-size: 22px;
-      font-weight: 600;
+      font-weight: 500;
+      letter-spacing: 0.3px;
     }
 
-    .subtitle {
-      margin-top: 8px;
-      font-size: 14px;
+    .tagline {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      font-style: italic;
       line-height: 1.6;
-      color: rgba(255,255,255,0.85);
     }
 
+    /* MENU */
     .menu {
       margin-top: 28px;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 18px;
+    }
+
+    .menu-group {
+      text-align: left;
+    }
+
+    .menu-group-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 10px;
+      padding-left: 6px;
     }
 
     .menu a {
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 12px;
-
       padding: 14px 16px;
       border-radius: 14px;
       background: rgba(255,255,255,0.12);
@@ -77,8 +88,8 @@
       text-decoration: none;
       font-size: 15px;
       font-weight: 500;
-
       transition: all 0.2s ease;
+      margin-top:5px;
     }
 
     .menu a:hover {
@@ -93,6 +104,31 @@
       flex-shrink: 0;
     }
 
+    /* DONATE */
+    .donate {
+      margin-top: 26px;
+      padding: 18px 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .qr {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: #fff;
+      padding: 8px;
+      margin-bottom: 12px;
+    }
+
+    .donate p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.85);
+    }
+
     footer {
       margin-top: 26px;
       font-size: 12px;
@@ -103,48 +139,8 @@
       .card {
         border-radius: 0;
         min-height: 100vh;
-        justify-content: center;
       }
     }
-	
-	.donate {
-	  margin-top: 26px;
-	  padding: 18px 14px;
-	  border-radius: 16px;
-	  background: rgba(255,255,255,0.06);
-	  text-align: center;
-	}
-
-	.qr {
-	  width: 140px;
-	  height: 140px;
-	  object-fit: contain;
-	  border-radius: 12px;
-	  background: #fff;
-	  padding: 8px;
-	  margin-bottom: 12px;
-	}
-
-	.donate p {
-	  margin: 0;
-	  font-size: 13px;
-	  line-height: 1.6;
-	  color: rgba(255,255,255,0.85);
-	}
-
-	.title {
-	  margin: 12px 0 6px;
-	  font-size: 22px;
-	  font-weight: 500;
-	  letter-spacing: 0.3px;
-	}
-
-	.tagline {
-	  font-size: 13px;
-	  color: rgba(255,255,255,0.7);
-	  font-style: italic;
-	}
-
   </style>
 </head>
 <body>
@@ -153,40 +149,53 @@
     <img src="assets/index/avatar.png" alt="Observations by Mina" class="avatar">
 
     <h1 class="title">Observations by Mina</h1>
-	<div class="tagline">
-	  Không anh hùng. Không phản diện.<br/>
-    Chỉ là một người đứng lại để nhìn và kể.
-	</div>
+    <div class="tagline">
+      Không anh hùng. Không phản diện.<br>
+      Chỉ là một người đứng lại để nhìn và cảm nhận.
+    </div>
 
     <div class="menu">
-		<a href="books/nhungkekhongchay/chap1.html">
-			<span class="icon">📖</span>
-			<span>Series: Nhật ký của kẻ không chạy</span>
-		</a>
 
-		<a href="https://www.youtube.com/@minadnb21" target="_blank">
-			<span class="icon">▶️</span>
-			<span>YouTube</span>
-		</a>
+      <!-- SERIES -->
+      <div class="menu-group">
+        <div class="menu-group-title">Series</div>
+        <a href="books/nhungkekhongchay/chap1.html">
+          <span class="icon">📖</span>
+          <span>Những kẻ không chạy</span>
+        </a>
+      </div>
 
-		<a href="https://www.tiktok.com/@minadnb21" target="_blank">
-			<span class="icon">🎵</span>
-			<span>TikTok</span>
-		</a>
+      <!-- KÊNH -->
+      <div class="menu-group">
+        <div class="menu-group-title">Kênh</div>
+        <a href="https://www.youtube.com/@minadnb21" target="_blank">
+          <span class="icon">▶️</span>
+          <span>YouTube</span>
+        </a>
+        <a href="https://www.tiktok.com/@minadnb21" target="_blank">
+          <span class="icon">🎵</span>
+          <span>TikTok</span>
+        </a>
+      </div>
 
-		<a href="contact.html">
-			<span class="icon">📬</span>
-			<span>Liên hệ</span>
-		</a>
+      <!-- KHÁC -->
+      <div class="menu-group">
+        <div class="menu-group-title">Khác</div>
+        <a href="contact.html">
+          <span class="icon">📬</span>
+          <span>Liên hệ</span>
+        </a>
+      </div>
+
     </div>
-	<div class="donate">
-	  <img src="assets/index/qr-donate.png" alt="QR Donate" class="qr">
-	  <p>
-      Nếu những dòng chữ này chạm tới bạn,<br>
-      bạn có thể mời tôi một ly cà phê.
-	  </p>
-	</div>
 
+    <div class="donate">
+      <img src="assets/index/qr-donate.png" alt="QR Donate" class="qr">
+      <p>
+        Nếu những đóng góp này chạm tới bạn,<br>
+        bạn có thể mời tôi một ly cà phê.
+      </p>
+    </div>
 
     <footer>
       © 2026 · Observations by Mina
